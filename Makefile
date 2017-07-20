@@ -6,13 +6,13 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/04/28 18:35:57 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/07/18 12:53:19 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 FLAG = -Wall -Wextra -Werror
-HEADER = libft.h
+HEADER = ./includes/
 SRC = ft_atoi.c\
 	  ft_bzero.c\
 	  ft_intlen.c\
@@ -44,6 +44,7 @@ SRC = ft_atoi.c\
 	  ft_putnbr.c\
 	  ft_putnbr_fd.c\
 	  ft_putstr.c\
+	  ft_putnstr.c\
 	  ft_putstr_fd.c\
 	  ft_strcat.c\
 	  ft_strchr.c\
@@ -76,18 +77,25 @@ SRC = ft_atoi.c\
 	  ft_strrev.c\
 	  ft_sort_list.c\
 	  ft_swap.c\
+	  ft_isupper.c\
+	  ft_sqrt.c\
+	  get_next_line.c\
 
 OBJ = $(SRC:.c=.o)
 
 all : $(NAME)
 
-$(NAME):
-	gcc $(FLAG) -c $(SRC) -I $(HEADER)
+$(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
+
+%.o:%.c
+	gcc $(FLAG) -c $(SRC) -I $(HEADER)
 
 clean:
 	rm -f $(OBJ)
 fclean: clean
 	rm -f $(NAME)
 re: fclean all
+
+.PHONY: clean fclean all re

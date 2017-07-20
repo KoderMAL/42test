@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/19 14:25:41 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/06/22 14:21:13 by alalaoui         ###   ########.fr       */
+/*   Created: 2017/03/14 13:07:43 by alalaoui          #+#    #+#             */
+/*   Updated: 2017/05/19 13:35:17 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void					*ft_memchr(const void *s, int c, size_t n)
+int		ft_sqrt(int nb)
 {
-	unsigned char		*ps;
+	int		i;
 
-	ps = (unsigned char*)s;
-	while (n--)
+	i = 0;
+	if (nb <= 0)
+		return (0);
+	while (i <= 47000)
 	{
-		if (*ps == (unsigned char)c)
-			return ((void*)ps);
-		ps++;
+		if (i * i == nb)
+		{
+			return (i);
+		}
+		i++;
 	}
-	return (NULL);
+	return (0);
 }

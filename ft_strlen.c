@@ -6,12 +6,11 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 17:54:23 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/04/12 18:13:01 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/06/22 14:27:33 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t		ft_strlen(const char *s)
 {

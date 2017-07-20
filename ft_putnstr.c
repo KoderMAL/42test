@@ -1,27 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/19 14:25:41 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/06/22 14:21:13 by alalaoui         ###   ########.fr       */
+/*   Created: 2017/07/18 12:46:26 by alalaoui          #+#    #+#             */
+/*   Updated: 2017/07/18 12:51:17 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void					*ft_memchr(const void *s, int c, size_t n)
+void	ft_putnstr(char const *s, size_t len)
 {
-	unsigned char		*ps;
+	size_t	i;
 
-	ps = (unsigned char*)s;
-	while (n--)
-	{
-		if (*ps == (unsigned char)c)
-			return ((void*)ps);
-		ps++;
-	}
-	return (NULL);
+	i = -1;
+	while (++i < len)
+		write(1, &s[i], 1);
 }

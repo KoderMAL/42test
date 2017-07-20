@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_isupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/19 14:25:41 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/06/22 14:21:13 by alalaoui         ###   ########.fr       */
+/*   Created: 2017/05/15 13:44:17 by alalaoui          #+#    #+#             */
+/*   Updated: 2017/05/15 13:45:25 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void					*ft_memchr(const void *s, int c, size_t n)
+int		ft_isupper(int c)
 {
-	unsigned char		*ps;
-
-	ps = (unsigned char*)s;
-	while (n--)
-	{
-		if (*ps == (unsigned char)c)
-			return ((void*)ps);
-		ps++;
-	}
-	return (NULL);
+	return (c >= 'A' && c <= 'Z');
 }
