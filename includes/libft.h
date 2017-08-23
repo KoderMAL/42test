@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/07/18 12:52:52 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/22 11:54:59 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include <limits.h>
 # define BUFF_SIZE 32
 # define MAX(B, S)	((B > S) ? B : S)
 # define MIN(B, S)	((B < S) ? B : S)
@@ -92,6 +93,7 @@ void			ft_putendl_fd(char const *s, int fd);
 void			ft_putendl(char const *s);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putnbr(int n);
+void			ft_put_longnbr(long long int nb);
 char			*ft_strrev(char *s);
 void			ft_swap(int *a, int *b);
 void			ft_sort_list(int nb, char **list);
