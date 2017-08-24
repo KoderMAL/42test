@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/23 17:14:36 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/08/24 14:54:41 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,6 +62,7 @@ SRC = ft_atoi.c\
 	  ft_strjoin.c\
 	  ft_strlcat.c\
 	  ft_strlen.c\
+	  ft_wclen.c\
 	  ft_strmap.c\
 	  ft_strmapi.c\
 	  ft_strncat.c\
