@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/22 11:55:57 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/08/23 17:14:36 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,12 +39,14 @@ SRC = ft_atoi.c\
 	  ft_power.c\
 	  ft_putchar.c\
 	  ft_putchar_fd.c\
+	  ft_putwchar.c\
 	  ft_putendl.c\
 	  ft_putendl_fd.c\
 	  ft_putnbr.c\
 	  ft_putnbr_fd.c\
 	  ft_put_longnbr.c\
 	  ft_putstr.c\
+	  ft_putwstr.c\
 	  ft_putnstr.c\
 	  ft_putstr_fd.c\
 	  ft_strcat.c\

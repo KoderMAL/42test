@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/22 11:54:59 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/23 17:12:33 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,8 +86,10 @@ int				ft_power(int nb, int power);
 int				ft_sqrt(int nb);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putchar(char c);
+void			ft_putwchar(wchar_t wc);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putstr(char const *s);
+void			ft_putwstr(wchar_t const *s);
 void			ft_putnstr(char const *s, size_t len);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putendl(char const *s);
