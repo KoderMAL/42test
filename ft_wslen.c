@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wclen.c                                         :+:      :+:    :+:   */
+/*   ft_wslen.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/24 14:15:03 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/24 15:16:05 by alalaoui         ###   ########.fr       */
+/*   Created: 2017/08/24 17:27:44 by alalaoui          #+#    #+#             */
+/*   Updated: 2017/08/24 17:30:41 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <wchar.h>
 
-int				ft_wclen(wchar_t wc)
+size_t		ft_wslen(wchar_t *ws)
 {
-	int len;
+	int	i;
+	int	len;
 
+	i = 0;
 	len = 0;
-	if ((int)wc < 0x80)
-		len++;
-	else if ((int)wc < 0x800)
-		len += 2;
-	else if ((int)wc < 0x10000)
-		len += 3;
-	else
-		len += 4;
-	return (len);	
+	while (s[i] != '\0')
+	{
+		len += ft_wclen(s[i]);
+		i++;
+	}
+	return (len);
 }

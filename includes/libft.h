@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/24 14:55:57 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/24 17:31:53 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,8 @@ int				ft_atoi(char *str);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t			ft_strlen(const char *s);
-int				ft_wclen(wint_t wc);
+int				ft_wclen(wchar_t wc);
+size_t			ft_wslen(wchar_t *ws);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, char *src, size_t len);
 char			*ft_strdup(const char *s1);
