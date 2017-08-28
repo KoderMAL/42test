@@ -19,9 +19,9 @@ size_t		ft_wslen(wchar_t *ws)
 
 	i = 0;
 	len = 0;
-	while (s[i] != '\0')
+	while (ws[i] != '\0')
 	{
-		len += ft_wclen(s[i]);
+		len += ft_wclen(ws[i]);
 		i++;
 	}
 	return (len);

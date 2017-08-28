@@ -92,6 +92,7 @@ void			ft_putwchar(wchar_t wc);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putstr(char const *s);
 void			ft_putwstr(wchar_t const *s);
+void			ft_putwnstr(wchar_t const *ws, size_t len);
 void			ft_putnstr(char const *s, size_t len);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putendl(char const *s);

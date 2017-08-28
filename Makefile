@@ -47,6 +47,7 @@ SRC = ft_atoi.c\
 	  ft_put_longnbr.c\
 	  ft_putstr.c\
 	  ft_putwstr.c\
+	  ft_putwnstr.c\
 	  ft_putnstr.c\
 	  ft_putstr_fd.c\
 	  ft_strcat.c\
