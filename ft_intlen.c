@@ -6,15 +6,15 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/23 15:17:53 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/04/25 17:14:18 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/28 20:00:31 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int					ft_intlen(int n)
+size_t				ft_intlen(long long int n)
 {
-	int				len;
+	size_t			len;
 	unsigned int	nb;
 
 	len = 0;
