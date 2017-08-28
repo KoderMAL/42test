@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/28 20:34:17 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/28 20:36:58 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_itoa(int n);
-int				ft_intlen(long long int n);
+size_t			ft_intlen(long long int n);
 int				ft_power(int nb, int power);
 int				ft_sqrt(int nb);
 void			ft_putchar_fd(char c, int fd);
