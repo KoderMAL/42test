@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/28 20:36:58 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/29 11:32:02 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,10 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t			ft_strlen(const char *s);
 int				ft_wclen(wchar_t wc);
 size_t			ft_wslen(wchar_t *ws);
+int				ft_hxlen(unsigned long long int nb);
+size_t			ft_intlen(long long int n);
+int				ft_power(int nb, int power);
+int				ft_sqrt(int nb);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy(char *dst, char *src, size_t len);
 char			*ft_strdup(const char *s1);
@@ -83,11 +87,8 @@ char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s);
 char			**ft_strsplit(char const *s, char c);
 char			*ft_itoa(int n);
-size_t			ft_intlen(long long int n);
-int				ft_power(int nb, int power);
-int				ft_sqrt(int nb);
-void			ft_putchar_fd(char c, int fd);
 void			ft_putchar(char c);
+void			ft_putchar_fd(char c, int fd);
 void			ft_putwchar(wchar_t wc);
 void			ft_putstr_fd(char const *s, int fd);
 void			ft_putstr(char const *s);
@@ -99,6 +100,7 @@ void			ft_putendl(char const *s);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putnbr(int n);
 void			ft_put_longnbr(long long int nb);
+void			ft_put_hx(size_t nb);
 char			*ft_strrev(char *s);
 void			ft_swap(int *a, int *b);
 void			ft_sort_list(int nb, char **list);

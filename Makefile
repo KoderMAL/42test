@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/24 17:31:22 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/08/29 11:32:45 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@ HEADER = ./includes/
 SRC = ft_atoi.c\
 	  ft_bzero.c\
 	  ft_intlen.c\
+	  ft_hexlen.c\
 	  ft_isalnum.c\
 	  ft_isalpha.c\
 	  ft_isascii.c\
