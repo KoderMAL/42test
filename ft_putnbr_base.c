@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hxlen.c                                         :+:      :+:    :+:   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/29 11:17:51 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/29 13:01:41 by alalaoui         ###   ########.fr       */
+/*   Created: 2017/08/29 15:13:01 by alalaoui          #+#    #+#             */
+/*   Updated: 2017/08/29 15:17:46 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		ft_put_hx(size_t nb)
+void	ft_putnbr_base(unsigned long long int n, char *base)
 {
-	char *str;
-
-	str = "0123456789abcdef";
-	if (nb >=16)
-		ft_put_hx(nb / 16);
-	ft_putchar(str[nb % 16]);
-}
-
-int			ft_hxlen(unsigned long long int nb)
-{
-	int		len;
-
-	len = 1;
-	while (nb /= 16)
-		len++;
-	return (len);
+	if (n >= ft_strlen(base))
+		ft_putnbr_base(n / ft_strlen(base), base);
+	ft_putchar(base[n % ft_strlen(base)]);
 }

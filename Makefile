@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/29 11:32:45 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/08/29 16:58:36 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ HEADER = ./includes/
 SRC = ft_atoi.c\
 	  ft_bzero.c\
 	  ft_intlen.c\
-	  ft_hexlen.c\
+	  ft_hxlen.c\
 	  ft_isalnum.c\
 	  ft_isalpha.c\
 	  ft_isascii.c\
@@ -45,6 +45,7 @@ SRC = ft_atoi.c\
 	  ft_putendl_fd.c\
 	  ft_putnbr.c\
 	  ft_putnbr_fd.c\
+	  ft_putnbr_base.c\
 	  ft_put_longnbr.c\
 	  ft_putstr.c\
 	  ft_putwstr.c\
@@ -66,6 +67,7 @@ SRC = ft_atoi.c\
 	  ft_strlen.c\
 	  ft_wclen.c\
 	  ft_wslen.c\
+	  ft_len_base.c\
 	  ft_strmap.c\
 	  ft_strmapi.c\
 	  ft_strncat.c\
