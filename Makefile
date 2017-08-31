@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/29 16:58:36 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/08/31 12:14:41 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,19 +92,34 @@ SRC = ft_atoi.c\
 
 OBJ = $(SRC:.c=.o)
 
+# COLORS
+C_NO	=	"\033[00m"
+C_OK	=	"\033[35m"
+C_GOOD	=	"\033[32m"
+C_ERROR	=	"\033[31m"
+C_WARN	=	"\033[33m"
+
+# # DBG MESSAGE
+SUCCESS	=	$(C_GOOD)SUCCESS$(C_NO)
+OK		=	$(C_OK)OK$(C_NO)
+
+
 all : $(NAME)
 
 $(NAME): $(OBJ)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	@ar rc $@ $<
+	@ranlib $@
+	@echo "Compiling & sorting" [ $(NAME) ] $(SUCCESS)
 
 %.o:%.c
-	gcc $(FLAG) -c $(SRC) -I $(HEADER)
+	@gcc $(FLAG) -o $@ -c $< -I $(HEADER)
+	@echo "Linking" [ $< ] $(OK)
 
 clean:
-	rm -f $(OBJ)
+	@rm -f $(OBJ)
+	@echo "Cleaning" [ $(NAME) ] "..." $(OK)
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 re: fclean all
 
 .PHONY: clean fclean all re
