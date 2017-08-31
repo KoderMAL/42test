@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putwnstr.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/31 15:01:17 by alalaoui          #+#    #+#             */
+/*   Updated: 2017/08/31 15:02:40 by alalaoui         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void		ft_putwnstr(wchar_t const *ws, size_t len)
@@ -5,6 +17,6 @@ void		ft_putwnstr(wchar_t const *ws, size_t len)
 	size_t	i;
 
 	i = -1;
-	while(*ws && ++i < len)
+	while (*ws && ++i < len)
 		ft_putwchar(*ws++);
 }

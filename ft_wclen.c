@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/24 14:15:03 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/24 15:16:05 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/31 15:01:44 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ int				ft_wclen(wchar_t wc)
 		len += 3;
 	else
 		len += 4;
-	return (len);	
+	return (len);
 }

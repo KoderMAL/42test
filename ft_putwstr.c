@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/23 17:12:42 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/23 17:13:50 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/31 15:01:30 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 
 void		ft_putwstr(wchar_t const *s)
 {
-	while(*s)
+	while (*s)
 		ft_putwchar(*s++);
 }

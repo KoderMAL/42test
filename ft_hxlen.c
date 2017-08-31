@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/29 11:17:51 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/29 13:01:41 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/08/31 15:02:26 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void		ft_put_hx(size_t nb)
 	char *str;
 
 	str = "0123456789abcdef";
-	if (nb >=16)
+	if (nb >= 16)
 		ft_put_hx(nb / 16);
 	ft_putchar(str[nb % 16]);
 }
