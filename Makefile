@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/31 12:14:41 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/08/31 15:57:29 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -117,9 +117,9 @@ $(NAME): $(OBJ)
 
 clean:
 	@rm -f $(OBJ)
-	@echo "Cleaning" [ $(NAME) ] "..." $(OK)
 fclean: clean
 	@rm -f $(NAME)
+	@echo "Cleaning " [ $(NAME) ] "..." $(SUCCESS)
 re: fclean all
 
 .PHONY: clean fclean all re
