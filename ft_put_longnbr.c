@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/22 11:40:05 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/22 11:53:39 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/09/04 16:34:03 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,13 @@ void	ft_put_longnbr(long long int nb)
 		ft_putchar('-');
 		nb = -nb;
 	}
+	if (nb > 9)
+		ft_put_longnbr(nb / 10);
+	ft_putchar(nb % 10 + '0');
+}
+
+void	ft_put_long_unsigned_nbr(long long unsigned nb)
+{
 	if (nb > 9)
 		ft_put_longnbr(nb / 10);
 	ft_putchar(nb % 10 + '0');

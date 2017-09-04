@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/08/29 16:59:59 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/09/04 16:35:50 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ size_t			ft_strlen(const char *s);
 int				ft_wclen(wchar_t wc);
 size_t			ft_wslen(wchar_t *ws);
 int				ft_hxlen(unsigned long long int nb);
-size_t			ft_intlen(long long int n);
+int				ft_intlen(long long int n);
 size_t			ft_nbrlen_base(unsigned long long int nb, size_t base);
 int				ft_power(int nb, int power);
 int				ft_sqrt(int nb);
@@ -102,6 +102,7 @@ void			ft_putnbr_fd(int n, int fd);
 void			ft_putnbr(int n);
 void			ft_putnbr_base(unsigned long long int n, char *base);
 void			ft_put_longnbr(long long int nb);
+void			ft_put_long_unsigned_nbr(long long unsigned nb);
 void			ft_put_hx(size_t nb);
 char			*ft_strrev(char *s);
 void			ft_swap(int *a, int *b);
