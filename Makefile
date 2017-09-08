@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/08/31 15:57:29 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/09/08 14:01:54 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 FLAG = -Wall -Wextra -Werror
 HEADER = ./includes/
 SRC = ft_atoi.c\
+	  ft_atoll.c\
 	  ft_bzero.c\
 	  ft_intlen.c\
 	  ft_hxlen.c\

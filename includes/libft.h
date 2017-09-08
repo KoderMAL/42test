@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/09/04 16:35:50 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/09/08 14:02:33 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int				ft_isalnum(int c);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 int				ft_atoi(char *str);
+long long		ft_atoll(const char *str);
 int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t			ft_strlen(const char *s);
