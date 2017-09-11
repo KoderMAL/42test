@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/09/08 14:01:54 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/09/11 17:37:07 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -108,8 +108,8 @@ OK		=	$(C_OK)OK$(C_NO)
 all : $(NAME)
 
 $(NAME): $(OBJ)
-	@ar rc $@ $<
-	@ranlib $@
+	@ar rc $(NAME) $(OBJ)
+	@ranlib $(NAME)
 	@echo "Compiling & sorting" [ $(NAME) ] $(SUCCESS)
 
 %.o:%.c
