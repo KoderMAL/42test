@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/09/11 17:37:07 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/10/05 14:36:44 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,6 +79,7 @@ SRC = ft_atoi.c\
 	  ft_strnstr.c\
 	  ft_strrchr.c\
 	  ft_strsplit.c\
+	  free_split.c\
 	  ft_strstr.c\
 	  ft_strsub.c\
 	  ft_strtrim.c\
@@ -95,12 +96,11 @@ OBJ = $(SRC:.c=.o)
 
 # COLORS
 C_NO	=	"\033[00m"
-C_OK	=	"\033[35m"
+C_OK	=	"\033[34m"
+C_C		=	"\033[36m"
 C_GOOD	=	"\033[32m"
-C_ERROR	=	"\033[31m"
-C_WARN	=	"\033[33m"
 
-# # DBG MESSAGE
+# DBG MESSAGE
 SUCCESS	=	$(C_GOOD)SUCCESS$(C_NO)
 OK		=	$(C_OK)OK$(C_NO)
 
@@ -110,17 +110,17 @@ all : $(NAME)
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
-	@echo "Compiling & sorting" [ $(NAME) ] $(SUCCESS)
+	@echo "LIBRARY CREATION [->" $(C_OK) $(NAME) $(C_NO) "<-]" $(SUCCESS)
 
 %.o:%.c
 	@gcc $(FLAG) -o $@ -c $< -I $(HEADER)
-	@echo "Linking" [ $< ] $(OK)
+	@echo "< Linking file -|" $(C_C) $< $(C_NO)"|- to library >" $(OK)
 
 clean:
 	@rm -f $(OBJ)
 fclean: clean
 	@rm -f $(NAME)
-	@echo "Cleaning " [ $(NAME) ] "..." $(SUCCESS)
+	@echo "CLEANING [->" $(NAME) "<-] ..." $(SUCCESS)
 re: fclean all
 
 .PHONY: clean fclean all re
