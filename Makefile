@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/10/05 14:36:44 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/10/05 14:48:49 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -110,7 +110,7 @@ all : $(NAME)
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
-	@echo "LIBRARY CREATION [->" $(C_OK) $(NAME) $(C_NO) "<-]" $(SUCCESS)
+	@echo "  LIBRARY CREATION [->" $(C_OK) $(NAME) $(C_NO) "<-] ..." $(SUCCESS)
 
 %.o:%.c
 	@gcc $(FLAG) -o $@ -c $< -I $(HEADER)
@@ -120,7 +120,7 @@ clean:
 	@rm -f $(OBJ)
 fclean: clean
 	@rm -f $(NAME)
-	@echo "CLEANING [->" $(NAME) "<-] ..." $(SUCCESS)
+	@echo "  CLEANING [->" $(NAME) "<-] ..." $(SUCCESS)
 re: fclean all
 
 .PHONY: clean fclean all re
