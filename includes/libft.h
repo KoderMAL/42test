@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/10/05 14:44:56 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/10/10 18:07:37 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int				get_next_line(const int fd, char **line);
 int				ft_isalpha(int c);
 int				ft_isupper(int c);
 int				ft_isdigit(int c);
+int				ft_line_isidigit(char *line);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
 int				ft_isalnum(int c);

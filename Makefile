@@ -6,7 +6,7 @@
 #    By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/20 20:13:40 by alalaoui          #+#    #+#              #
-#    Updated: 2017/10/05 14:48:49 by alalaoui         ###   ########.fr        #
+#    Updated: 2017/10/10 18:07:15 by alalaoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRC = ft_atoi.c\
 	  ft_isalpha.c\
 	  ft_isascii.c\
 	  ft_isdigit.c\
+	  ft_line_isdigit.c\
 	  ft_isprint.c\
 	  ft_itoa.c\
 	  ft_lstadd.c\
