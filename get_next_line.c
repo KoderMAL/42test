@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/25 17:11:42 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/06/27 12:20:36 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/10/10 16:47:18 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,37 +24,6 @@ static t_gnl		*ft_create_file(int fd)
 	file->tmp = ft_strnew(0);
 	file->next = NULL;
 	return (file);
-}
-
-static void			ft_add_file(t_gnl **file, t_gnl *new_file)
-{
-	t_gnl			*tmp;
-
-	tmp = *file;
-	while (tmp->next != NULL)
-		tmp = tmp->next;
-	tmp->next = new_file;
-}
-
-static t_gnl		*ft_search_file(t_gnl **file, int fd)
-{
-	t_gnl			*save;
-	t_gnl			*new_file;
-
-	save = *file;
-	while (save)
-	{
-		if (save->fd == fd)
-			return (save);
-		if (!(save->next))
-		{
-			new_file = ft_create_file(fd);
-			ft_add_file(&save, new_file);
-			return (new_file);
-		}
-		save = save->next;
-	}
-	return (NULL);
 }
 
 static int			ft_gnl_return(char *content, char **line)
@@ -84,15 +53,13 @@ static int			ft_gnl_return(char *content, char **line)
 int					get_next_line(const int fd, char **line)
 {
 	char			buffer[BUFF_SIZE + 1];
-	static t_gnl	*file = NULL;
 	int				ret;
-	t_gnl			*l;
+	static t_gnl	*l = NULL;
 
-	if (!file)
-		file = ft_create_file(fd);
+	if (!l)
+		l = ft_create_file(fd);
 	if (fd < 0 || line == NULL || read(fd, buffer, 0) < 0)
 		return (-1);
-	l = ft_search_file(&file, fd);
 	while ((ret = read(fd, buffer, BUFF_SIZE)) > 0)
 	{
 		buffer[ret] = '\0';
