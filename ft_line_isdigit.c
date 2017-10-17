@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/10 18:05:31 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/10/10 18:06:57 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/10/17 17:25:33 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ int			ft_line_isdigit(char *line)
 {
 	if (!*line)
 		return (0);
-	while (*str)
+	while (*line)
 	{
-		if (!ft_isdigit(*str))
+		if (!ft_isdigit(*line))
 			return (0);
-		str++;
+		line++;
 	}
 	return (1);
 }
