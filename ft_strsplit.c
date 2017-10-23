@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/20 15:38:32 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/04/27 18:33:35 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/10/23 17:44:39 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,16 @@ static size_t	ft_strlenc(char const *s, char c)
 
 	len = 0;
 	while (s[len] && s[len] != c)
+		len++;
+	return (len);
+}
+
+int				ft_split_len(char **split)
+{
+	int			len;
+
+	len = 0;
+	while (split[len])
 		len++;
 	return (len);
 }
