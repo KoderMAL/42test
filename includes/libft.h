@@ -6,7 +6,7 @@
 /*   By: alalaoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 10:26:59 by alalaoui          #+#    #+#             */
-/*   Updated: 2017/10/23 17:45:34 by alalaoui         ###   ########.fr       */
+/*   Updated: 2017/11/22 15:08:41 by alalaoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ typedef	struct	s_list
 	size_t			content_size;
 	struct s_list	*next;
 }				t_list;
-typedef struct		s_gnl
+typedef struct	s_gnl
 {
 	int				fd;
 	char			*content;
 	char			*tmp;
 	struct s_gnl	*next;
-}					t_gnl;
+}				t_gnl;
 int				get_next_line(const int fd, char **line);
 int				ft_isalpha(int c);
 int				ft_isupper(int c);
